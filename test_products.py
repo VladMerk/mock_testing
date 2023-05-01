@@ -4,18 +4,6 @@ from unittest import mock
 import requests
 
 
-class SomeClass:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-
-    def summ(self):
-        return self.a + self.b
-
-    def div(self):
-        return 0 if self.b == 0 else self.a / self.b
-
-
 def get_response_status(url):
     response = requests.get(url)
     return response.status_code
@@ -44,7 +32,3 @@ class SomeClassTestCase(unittest.TestCase):
         url = "htts://ya.ru"
 
         self.assertEqual(get_json(url), {"ok": True})
-
-
-if __name__ == "__main__":
-    unittest.main()

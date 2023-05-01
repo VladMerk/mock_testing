@@ -1,6 +1,6 @@
+import builtins
 import unittest
 from unittest.mock import MagicMock, patch
-import builtins
 
 """
 Напишите тест для функции divide_numbers(a, b),

@@ -1,4 +1,5 @@
 from unittest import TestCase, mock
+
 from my_parser import get_habr_titles
 
 

@@ -9,9 +9,9 @@
 что результат функции get_url() равен этой строке.
 """
 import unittest
-import requests
-
 from unittest.mock import MagicMock, patch
+
+import requests
 
 
 def get_url(url: str):

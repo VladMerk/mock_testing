@@ -22,7 +22,3 @@ class MyAsyncTestCase(unittest.IsolatedAsyncioTestCase):
         expected_result = await get_data(url)
 
         self.assertEqual({"ok": True}, expected_result)
-
-
-if __name__ == "__main__":
-    unittest.main()
